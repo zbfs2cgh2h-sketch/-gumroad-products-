@@ -1,0 +1,21 @@
+# Example 1: Daily Backup
+0 2 * * * /usr/local/bin/backup.sh
+
+# Example 2: Hourly Health Check
+0 * * * * curl -f http://localhost:8080/health
+
+# Example 3: Every 15 minutes monitoring
+*/15 * * * * python /home/user/monitor.py
+
+# Example 4: Weekly cleanup (Sundays at 3 AM)
+0 3 * * 0 /home/user/scripts/cleanup.sh
+
+# Example 5: Weekday morning report
+0 9 * * 1-5 /home/user/scripts/report.py
+
+# Example 6: Monthly billing
+0 0 1 * * /usr/local/bin/generate_invoice.sh
+
+# Example 7: Special schedule shortcuts
+@daily /home/user/scripts/daily_task.sh
+@hourly /usr/local/bin/check_status.py
