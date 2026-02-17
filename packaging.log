@@ -1,0 +1,11 @@
+[2026-02-14 16:30:14] === Gumroad 상품 패키징 시작 ===
+[2026-02-14 16:30:14] 상품명: test-product
+[2026-02-14 16:30:14] 버전: 1.0
+[2026-02-14 16:30:14] 입력 경로: projects/test-product
+[2026-02-14 16:30:14] ZIP 생성 중: test-product-v1.0.zip
+[2026-02-14 16:30:14]   추가: test-product/test-product/README.md
+[2026-02-14 16:30:14]   추가: test-product/test-product/code/app.js
+[2026-02-14 16:30:14] ✓ ZIP 생성 완료: /Users/molt/.openclaw/workspace/projects/gumroad-products/test-product/test-product-v1.0.zip
+[2026-02-14 16:30:14]   파일 크기: 0.00 MB
+[2026-02-14 16:30:14] 메타데이터 저장: /Users/molt/.openclaw/workspace/projects/gumroad-products/test-product/test-product-metadata.json
+[2026-02-14 16:30:14] === 패키징 완료 ===

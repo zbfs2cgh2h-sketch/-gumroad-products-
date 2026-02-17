@@ -1,0 +1,26 @@
+# Example config file
+# Copy to config.yaml and customize
+
+defaults: &defaults
+  timeout: 30
+  retry: 3
+
+development:
+  <<: *defaults
+  api:
+    endpoint: http://localhost:8000
+  logging:
+    level: DEBUG
+    file: logs/dev.log
+  features:
+    auto_update: false
+
+production:
+  <<: *defaults
+  api:
+    endpoint: https://api.prod.com
+  logging:
+    level: INFO
+    file: /var/log/cli/app.log
+  features:
+    auto_update: true

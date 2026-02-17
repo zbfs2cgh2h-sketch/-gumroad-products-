@@ -1,0 +1,17 @@
+{
+  "github": {
+    "token": "",
+    "username": "your-username",
+    "email": "your-email@example.com",
+    "repos": []
+  },
+  "local_repos": [
+    "/path/to/your/project1",
+    "/path/to/your/project2"
+  ],
+  "goals": {
+    "commits_per_day": 5,
+    "coding_hours_per_day": 4
+  },
+  "refresh_interval": 60
+}

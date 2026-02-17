@@ -1,0 +1,59 @@
+{
+  "ignore_patterns": [
+    "*.test.ts",
+    "*.test.js",
+    "*.spec.ts",
+    "*.spec.js",
+    "package-lock.json",
+    "yarn.lock",
+    "pnpm-lock.yaml",
+    "dist/**",
+    "build/**",
+    "node_modules/**",
+    ".next/**",
+    "coverage/**",
+    "*.min.js",
+    "*.min.css"
+  ],
+  "severity_thresholds": {
+    "high": ["security", "critical-bug"],
+    "medium": ["bug", "performance", "memory-leak"],
+    "low": ["code-quality", "style", "documentation"]
+  },
+  "review_depth": {
+    "quick": {
+      "max_issues": 5,
+      "focus": ["security", "critical-bug"]
+    },
+    "balanced": {
+      "max_issues": 15,
+      "focus": ["security", "bug", "performance", "code-quality"]
+    },
+    "deep": {
+      "max_issues": 30,
+      "focus": ["security", "bug", "performance", "code-quality", "maintainability", "best-practices"]
+    }
+  },
+  "language_specific": {
+    "python": {
+      "focus": ["type-hints", "exception-handling", "pep8"],
+      "tools": ["pylint", "mypy", "black"]
+    },
+    "javascript": {
+      "focus": ["null-checks", "async-handling", "react-hooks"],
+      "tools": ["eslint", "prettier"]
+    },
+    "typescript": {
+      "focus": ["type-safety", "strict-mode", "generics"],
+      "tools": ["tsc", "eslint"]
+    },
+    "go": {
+      "focus": ["error-handling", "goroutine-safety", "defer-usage"],
+      "tools": ["golint", "go vet"]
+    },
+    "rust": {
+      "focus": ["ownership", "lifetime", "unsafe-usage"],
+      "tools": ["clippy", "rustfmt"]
+    }
+  }
+}

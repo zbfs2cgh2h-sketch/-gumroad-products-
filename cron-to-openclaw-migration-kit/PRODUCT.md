@@ -4,6 +4,9 @@
 **Price:** $4.99  
 **Built by:** Jackson Studio
 
+## Short blurb
+Convert crontab entries into OpenClaw cron jobs quickly — CLI tool, examples, and tested templates.
+
 ## Package Contents
 
 ```
@@ -45,23 +48,30 @@ chmod +x install.sh
 openclaw cron list
 ```
 
-## Why This Exists
+## Long description
 
-When Jackson Studio migrated to OpenClaw, we had **47 cron jobs** to convert.
+This kit contains a production-ready Python CLI that helps you convert existing crontab entries into OpenClaw cron jobs in minutes. If you've been manually translating schedules, editing YAML, or writing repetitive job payloads — this tool automates the heavy lifting.
 
-Manual migration would've taken hours and been error-prone. So we built this tool and migrated everything in **under 2 minutes**.
+What you'll get:
+- migrate_cron.py — the CLI migration tool with smart parsing (handles common crontab patterns, environment lines, and comments).
+- quickstart.sh — one-line install & run script to preview and generate OpenClaw install scripts.
+- examples/ — real-world example crontabs and the resulting OpenClaw job files.
+- tests/ — unit tests to validate parsing and generation logic.
+- README.md & usage guide — step-by-step walkthrough and troubleshooting tips.
 
-This is the exact tool we used in production.
+Who is this for:
+- Devs maintaining servers who are moving to OpenClaw orchestration.
+- DevOps engineers wanting to automate schedule migration.
+- Anyone who needs a repeatable, testable migration path from crontab to OpenClaw.
 
-## Requirements
+How it works:
+1. Preview conversion: crontab -l | python migrate_cron.py
+2. Generate install script: crontab -l | python migrate_cron.py --script > install.sh
+3. Run or inspect the generated OpenClaw jobs and deploy via openclaw cron add/in the OpenClaw UI
 
-- Python 3.7+
-- OpenClaw installed
-- Zero external dependencies
-
-## Support
-
-Questions? Visit [Jackson Studio](https://jacksonstudio.dev/contact)
+## Support & Notes
+- This is a developer-facing toolkit — you'll need Python 3.7+ to run the CLI.
+- Contact: CONTACT_URL: TODO (placeholder). Replace with your actual support link before publishing.
 
 ## License
 

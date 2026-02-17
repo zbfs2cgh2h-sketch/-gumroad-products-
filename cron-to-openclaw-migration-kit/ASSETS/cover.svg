@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0ea5a4"/>
+    </linearGradient>
+    <style>
+      .bg{fill:url(#g)}
+      .title{font-family:Inter, Roboto, Arial, sans-serif; font-weight:700; font-size:56px; fill:#fff}
+      .subtitle{font-family:Inter, Roboto, Arial, sans-serif; font-weight:500; font-size:28px; fill:#e6f7f6}
+      .badge{font-family:Inter, Roboto, Arial, sans-serif; font-weight:600; font-size:18px; fill:#08303a}
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="800" rx="24"/>
+  <g transform="translate(80,120)">
+    <text class="title">Cron → OpenClaw</text>
+    <text class="title" y="72">Migration Kit</text>
+    <text class="subtitle" y="132">Automate converting crontab to OpenClaw jobs</text>
+    <rect x="0" y="190" width="420" height="48" rx="8" fill="#e6fffd"/>
+    <text class="badge" x="18" y="225">Includes CLI tool • examples • tests</text>
+  </g>
+  <g transform="translate(860,120)">
+    <rect x="0" y="0" width="420" height="420" rx="12" fill="#052025" opacity="0.12"/>
+    <g transform="translate(36,36)">
+      <rect x="0" y="0" width="348" height="348" rx="8" fill="#022b2a"/>
+      <text x="24" y="56" font-family="monospace" font-size="18" fill="#9ff3ef">$ crontab -l</text>
+      <text x="24" y="96" font-family="monospace" font-size="18" fill="#9ff3ef">| python migrate_cron.py</text>
+      <text x="24" y="136" font-family="monospace" font-size="18" fill="#9ff3ef">→ openclaw cron add ...</text>
+    </g>
+  </g>
+  <g transform="translate(80,680)">
+    <text font-family="Inter, Roboto, Arial, sans-serif" font-size="16" fill="#cceeea">Built by Jackson Studio</text>
+  </g>
+</svg>
