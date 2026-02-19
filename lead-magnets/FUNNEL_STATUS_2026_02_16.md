@@ -109,7 +109,7 @@ pandoc python-one-liners-cheat-sheet.md -o python-one-liners.pdf
 현재 Gumroad API 접근 오류:
 ```
 curl -s "https://api.gumroad.com/v2/products" \
-  -d "access_token=FOjb-71Yr85Ile4-IgZLmeit38WjDkLDOEYrYVy-kq8"
+  -d "access_token=YOUR_GUMROAD_ACCESS_TOKEN"
 → 404 오류
 ```
 
